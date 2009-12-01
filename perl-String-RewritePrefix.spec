@@ -1,5 +1,5 @@
 %define upstream_name    String-RewritePrefix
-%define upstream_version 0.004
+%define upstream_version 0.005
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
