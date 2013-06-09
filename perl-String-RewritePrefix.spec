@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    3
 
 Summary:    Rewrite strings based on a set of known prefixes
 License:    GPL+ or Artistic
@@ -14,7 +14,8 @@ Source0:    http://www.cpan.org/modules/by-module/String/%{upstream_name}-%{upst
 BuildRequires: perl(Sub::Exporter)
 BuildRequires: perl-devel
 
-BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
+%define debug_package %{nil}
+
 
 %description
 Rewrite strings based on a set of known prefixes
