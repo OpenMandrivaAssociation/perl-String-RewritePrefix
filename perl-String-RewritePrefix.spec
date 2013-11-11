@@ -1,15 +1,15 @@
 %define upstream_name    String-RewritePrefix
-%define upstream_version 0.006
+%define upstream_version 0.007
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    3
+Release:    1
 
 Summary:    Rewrite strings based on a set of known prefixes
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/String/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/String/String-RewritePrefix-%{upstream_version}.tar.gz
 
 BuildRequires: perl(Sub::Exporter)
 BuildRequires: perl-devel
@@ -60,4 +60,5 @@ Rewrite strings based on a set of known prefixes
 
 * Fri May 29 2009 cpan2dist 0.004-1mdv
 - initial mdv release, generated with cpan2dist
+
 
